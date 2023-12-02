@@ -24,22 +24,22 @@ const Projects = () => {
       </div>
       <div className="project-images">
         <div
-          data-aos="zoom-in-right"
+          data-aos="fade-right"
           data-aos-duration="1000"
           className="images"
         ></div>
         <div
-          data-aos="zoom-in-left"
+          data-aos="fade-left"
           data-aos-duration="1000"
           className="images"
         ></div>
         <div
-          data-aos="zoom-in-right"
+          data-aos="fade-right"
           data-aos-duration="1000"
           className="images"
         ></div>
         <div
-          data-aos="zoom-in-left"
+          data-aos="fade-left"
           data-aos-duration="1000"
           className="images"
         ></div>
