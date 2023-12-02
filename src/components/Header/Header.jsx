@@ -1,7 +1,14 @@
+import { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import Button from "../Button/Button";
 import "./Header.css";
 
 const Header = ({ setShowCV, handleCVButton }) => {
+  useEffect(() => {
+    Aos.init();
+  });
+
   return (
     <div className="container" id="home">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319">
@@ -13,14 +20,14 @@ const Header = ({ setShowCV, handleCVButton }) => {
       </svg>
       <div className="profile-container">
         <div className="profile">
-          <h1>
+          <h1 data-aos="fade-right">
             Hi, I am <span>Darryl Matthew Kurniawan</span>
           </h1>
-          <div className="description">
+          <div className="description" data-aos="fade-right" data-aos-duration="1500">
             Tarumanagara University student majoring in Informatics Engineering
             and interested in becoming a Front-end Developer
           </div>
-          <div className="button-list">
+          <div className="button-list" data-aos-duration="2000" data-aos="fade-right">
             <Button
               handleClick={handleCVButton}
               text="Show CV"
@@ -33,7 +40,7 @@ const Header = ({ setShowCV, handleCVButton }) => {
             /> */}
           </div>
         </div>
-        <div className="profile-image-container">
+        <div className="profile-image-container" data-aos="fade-left">
           <div className="profile-image"></div>
         </div>
       </div>

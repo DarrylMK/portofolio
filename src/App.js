@@ -1,5 +1,7 @@
 import "./App.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 import CVContainer from "./components/CVContainer/CVContainer";
 import Header from "./components/Header/Header";
 import NavigationBar from "./components/NavigationBar/NavigationBar";
@@ -8,6 +10,11 @@ import Footer from "./components/Footer/Footer";
 
 function App() {
   const [showCV, setShowCV] = useState(false);
+
+  useEffect(() => {
+    alert("Use PC/Laptop recommended");
+    Aos.init();
+  }, []);
 
   const handleCVButton = (index) => {
     // setFileIndex(index);
