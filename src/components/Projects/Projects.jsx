@@ -9,8 +9,12 @@ const Projects = () => {
   });
 
   return (
-    <div className="projects-container" id="projects">
-      <h2 data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1500">
+    <div className="projects-container project-1" id="projects">
+      <h2
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="1500"
+      >
         Marketplace Website Project
       </h2>
       <div
@@ -20,7 +24,7 @@ const Projects = () => {
       >
         College project to create a website with a "marketplace" theme using
         HTML, CSS, and JavaScript. This website creation also uses frameworks
-        and libraries such as Bootstrap, NodeJS and MongoDB as the database
+        and libraries such as Bootstrap, NodeJS and MongoDB as the database.
       </div>
       <div className="project-images">
         <div

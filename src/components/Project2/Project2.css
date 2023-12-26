@@ -1,0 +1,11 @@
+.project-2 {
+    align-items: flex-end;
+}
+
+.project-2 .project-images .images:nth-child(1) {
+    --image-url: url('../../assets/images/project2Image1.png');
+}
+
+.project-2 .project-images .images:nth-child(2) {
+    --image-url: url('../../assets/images/project2Image2.png');
+}

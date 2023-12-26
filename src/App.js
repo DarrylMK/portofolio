@@ -1,12 +1,13 @@
 import "./App.css";
 import { useEffect, useState } from "react";
-import Aos from 'aos';
-import 'aos/dist/aos.css';
+import Aos from "aos";
+import "aos/dist/aos.css";
 import CVContainer from "./components/CVContainer/CVContainer";
 import Header from "./components/Header/Header";
 import NavigationBar from "./components/NavigationBar/NavigationBar";
 import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer/Footer";
+import Project2 from "./components/Project2/Project2";
 
 function App() {
   const [showCV, setShowCV] = useState(false);
@@ -25,10 +26,15 @@ function App() {
   return (
     <>
       <NavigationBar />
-      {/* <div style={{ height: "4.7rem" }}>Space</div> */}
       {showCV && <CVContainer setShowCV={setShowCV} />}
       <Header setShowCV={setShowCV} handleCVButton={handleCVButton} />
-      <Projects />
+      <Projects
+        title="Marketplace Website Project"
+        description='College project to create a website with a "marketplace" theme using
+        HTML, CSS, and JavaScript. This website creation also uses frameworks
+        and libraries such as Bootstrap, NodeJS and MongoDB as the database'
+      />
+      <Project2 />
       <Footer />
     </>
   );
